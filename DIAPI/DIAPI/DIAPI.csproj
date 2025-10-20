@@ -86,6 +86,7 @@
     <Compile Include="BusinessPartners\BPManager.cs" />
     <Compile Include="BusinessPartners\BusinessPartner.cs" />
     <Compile Include="Connection\ConexionSAP.cs" />
+    <Compile Include="Documentos\DocumentosMngr.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

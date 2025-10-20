@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace DIAPI.BusinessPartners
 {
-    internal class BusinessPartner
+    public class BusinessPartner
     {
         public string CodigoSocio { get; set; }
         public string RazonSocial { get; set; }

@@ -1,14 +1,26 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "D:\\DESARROLLO\\CLIENTES\\CONTINENTAL\\SDK\\DIAPI\\",
+  "WorkspaceRootPath": "D:\\DESARROLLO\\CLIENTES\\CONTINENTAL\\SDK\\sdksap_continental\\DIAPI\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{E2DD87C2-E53C-45E4-9FA1-96237F6B90D7}|DIAPI\\DIAPI.csproj|d:\\desarrollo\\clientes\\continental\\sdk\\diapi\\diapi\\connection\\conexionsap.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{E2DD87C2-E53C-45E4-9FA1-96237F6B90D7}|DIAPI\\DIAPI.csproj|d:\\desarrollo\\clientes\\continental\\sdk\\sdksap_continental\\diapi\\diapi\\documentos\\documentosmngr.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E2DD87C2-E53C-45E4-9FA1-96237F6B90D7}|DIAPI\\DIAPI.csproj|solutionrelative:diapi\\documentos\\documentosmngr.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E2DD87C2-E53C-45E4-9FA1-96237F6B90D7}|DIAPI\\DIAPI.csproj|D:\\DESARROLLO\\CLIENTES\\CONTINENTAL\\SDK\\sdksap_continental\\DIAPI\\diapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E2DD87C2-E53C-45E4-9FA1-96237F6B90D7}|DIAPI\\DIAPI.csproj|solutionrelative:diapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E2DD87C2-E53C-45E4-9FA1-96237F6B90D7}|DIAPI\\DIAPI.csproj|D:\\DESARROLLO\\CLIENTES\\CONTINENTAL\\SDK\\sdksap_continental\\DIAPI\\diapi\\connection\\conexionsap.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{E2DD87C2-E53C-45E4-9FA1-96237F6B90D7}|DIAPI\\DIAPI.csproj|solutionrelative:diapi\\connection\\conexionsap.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E2DD87C2-E53C-45E4-9FA1-96237F6B90D7}|DIAPI\\DIAPI.csproj|d:\\desarrollo\\clientes\\continental\\sdk\\diapi\\diapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E2DD87C2-E53C-45E4-9FA1-96237F6B90D7}|DIAPI\\DIAPI.csproj|solutionrelative:diapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{E2DD87C2-E53C-45E4-9FA1-96237F6B90D7}|DIAPI\\DIAPI.csproj|d:\\desarrollo\\clientes\\continental\\sdk\\sdksap_continental\\diapi\\diapi\\businesspartners\\bpmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E2DD87C2-E53C-45E4-9FA1-96237F6B90D7}|DIAPI\\DIAPI.csproj|solutionrelative:diapi\\businesspartners\\bpmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E2DD87C2-E53C-45E4-9FA1-96237F6B90D7}|DIAPI\\DIAPI.csproj|D:\\DESARROLLO\\CLIENTES\\CONTINENTAL\\SDK\\sdksap_continental\\DIAPI\\diapi\\businesspartners\\businesspartner.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E2DD87C2-E53C-45E4-9FA1-96237F6B90D7}|DIAPI\\DIAPI.csproj|solutionrelative:diapi\\businesspartners\\businesspartner.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -18,17 +30,64 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 2,
           "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:129:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
             {
               "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "DocumentosMngr.cs",
+              "DocumentMoniker": "D:\\DESARROLLO\\CLIENTES\\CONTINENTAL\\SDK\\sdksap_continental\\DIAPI\\DIAPI\\Documentos\\DocumentosMngr.cs",
+              "RelativeDocumentMoniker": "DIAPI\\Documentos\\DocumentosMngr.cs",
+              "ToolTip": "D:\\DESARROLLO\\CLIENTES\\CONTINENTAL\\SDK\\sdksap_continental\\DIAPI\\DIAPI\\Documentos\\DocumentosMngr.cs*",
+              "RelativeToolTip": "DIAPI\\Documentos\\DocumentosMngr.cs*",
+              "ViewState": "AgIAAGYAAAAAAAAAAAAAAIcAAABMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-20T21:07:18.901Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "BusinessPartner.cs",
+              "DocumentMoniker": "D:\\DESARROLLO\\CLIENTES\\CONTINENTAL\\SDK\\sdksap_continental\\DIAPI\\DIAPI\\BusinessPartners\\BusinessPartner.cs",
+              "RelativeDocumentMoniker": "DIAPI\\BusinessPartners\\BusinessPartner.cs",
+              "ToolTip": "D:\\DESARROLLO\\CLIENTES\\CONTINENTAL\\SDK\\sdksap_continental\\DIAPI\\DIAPI\\BusinessPartners\\BusinessPartner.cs",
+              "RelativeToolTip": "DIAPI\\BusinessPartners\\BusinessPartner.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAKAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-20T17:30:15.849Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "BPManager.cs",
+              "DocumentMoniker": "D:\\DESARROLLO\\CLIENTES\\CONTINENTAL\\SDK\\sdksap_continental\\DIAPI\\DIAPI\\BusinessPartners\\BPManager.cs",
+              "RelativeDocumentMoniker": "DIAPI\\BusinessPartners\\BPManager.cs",
+              "ToolTip": "D:\\DESARROLLO\\CLIENTES\\CONTINENTAL\\SDK\\sdksap_continental\\DIAPI\\DIAPI\\BusinessPartners\\BPManager.cs",
+              "RelativeToolTip": "DIAPI\\BusinessPartners\\BPManager.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAEcAAAAeAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-20T16:25:12.592Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
               "Title": "ConexionSAP.cs",
-              "DocumentMoniker": "D:\\DESARROLLO\\CLIENTES\\CONTINENTAL\\SDK\\DIAPI\\DIAPI\\Connection\\ConexionSAP.cs",
+              "DocumentMoniker": "D:\\DESARROLLO\\CLIENTES\\CONTINENTAL\\SDK\\sdksap_continental\\DIAPI\\DIAPI\\Connection\\ConexionSAP.cs",
               "RelativeDocumentMoniker": "DIAPI\\Connection\\ConexionSAP.cs",
-              "ToolTip": "D:\\DESARROLLO\\CLIENTES\\CONTINENTAL\\SDK\\DIAPI\\DIAPI\\Connection\\ConexionSAP.cs",
+              "ToolTip": "D:\\DESARROLLO\\CLIENTES\\CONTINENTAL\\SDK\\sdksap_continental\\DIAPI\\DIAPI\\Connection\\ConexionSAP.cs",
               "RelativeToolTip": "DIAPI\\Connection\\ConexionSAP.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAARAAAAAAAAAA==",
+              "ViewState": "AgIAAA4AAAAAAAAAAAA9wCsAAABFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-10-20T15:19:11.304Z",
               "EditorCaption": ""
@@ -37,11 +96,11 @@
               "$type": "Document",
               "DocumentIndex": 1,
               "Title": "Program.cs",
-              "DocumentMoniker": "D:\\DESARROLLO\\CLIENTES\\CONTINENTAL\\SDK\\DIAPI\\DIAPI\\Program.cs",
+              "DocumentMoniker": "D:\\DESARROLLO\\CLIENTES\\CONTINENTAL\\SDK\\sdksap_continental\\DIAPI\\DIAPI\\Program.cs",
               "RelativeDocumentMoniker": "DIAPI\\Program.cs",
-              "ToolTip": "D:\\DESARROLLO\\CLIENTES\\CONTINENTAL\\SDK\\DIAPI\\DIAPI\\Program.cs",
+              "ToolTip": "D:\\DESARROLLO\\CLIENTES\\CONTINENTAL\\SDK\\sdksap_continental\\DIAPI\\DIAPI\\Program.cs",
               "RelativeToolTip": "DIAPI\\Program.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAACIAAAAbAAAAAAAAAA==",
+              "ViewState": "AgIAADsAAAAAAAAAAAAAAGUAAAAMAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-10-20T15:10:23.751Z",
               "EditorCaption": ""

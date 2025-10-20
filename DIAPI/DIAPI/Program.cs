@@ -1,5 +1,6 @@
 ﻿using DIAPI.BusinessPartners;
 using DIAPI.Connection;
+using DIAPI.Documentos;
 using SAPbobsCOM;
 using System;
 using System.Collections.Generic;
@@ -46,40 +47,123 @@ namespace DIAPI
             }
 
             //DATOS MAESTROS
-            //CLIENTES (SOCIOS DE NEGOCIO)
+            //EjecucionDatosMaestros();
 
-            BPManager bpManager = new BPManager(company);
-            bpManager.Existe("PL20100686814");
 
-            SAPbobsCOM.BusinessPartners bp = bpManager.Get("PL20100686814");
-            Console.WriteLine($"Código: {bp.CardCode} - Rázón social: {bp.CardName} - RUC: {bp.FederalTaxID}");
+            //Documentos de marketing (proceso de venta PEDIDO - ENTREGA - FACTURA - PAGO)
 
+            //CREACIÓN DE PEDIDO = 50403
+            DocumentosMngr oDocumentsMngr = new DocumentosMngr(company);
+
+            //try
+            //{
+            //    int docEntryPedido = oDocumentsMngr.CrearPedido();
+
+            //    Console.WriteLine($"Pedido creado exitosamente con código: {docEntryPedido}");
+            //}
+            //catch (Exception ex)
+            //{
+
+            //    Console.WriteLine($"Pedido no pudo ser creado. Mensaje de error: {ex.Message}");
+            //}
+
+
+            //CREACIÓN DE ENTREGAN (PARCIAL) = 50403
+
+            //try
+            //{
+            //    int docEntryEntrega = oDocumentsMngr.CrearEntrega(50403);
+
+            //    Console.WriteLine($"Entrega creada exitosamente con código: {docEntryEntrega}");
+            //}
+            //catch (Exception ex)
+            //{
+
+            //    Console.WriteLine($"Entrega no pudo ser creada. Mensaje de error: {ex.Message}");
+            //}
+
+            //CREACIÓN DE FACTURA
 
             try
             {
+                int docentryFactura = oDocumentsMngr.CrearFactura(50403);
 
-                Console.WriteLine("Iniciando consulta de socios filtrados por query");
-                List<BusinessPartner> listaFiltrada = bpManager.GetListaDesdeQuery("C"); //CLIENTES = C , PROVEEDORES = S
+                Console.WriteLine($"Factura creada exitosamente con código: {docentryFactura}");
+            }
+            catch (Exception ex)
+            {
 
-                foreach (var socio in listaFiltrada)
-                {
-                    Console.WriteLine($"Socio: {socio.CodigoSocio} - Razon Social: {socio.RazonSocial} - RUC: {socio.RUC}");
-                }
+                Console.WriteLine($"Factura no pudo ser creada. Mensaje de error: {ex.Message}");
+            }
+
+            //CREACIÓN DE PAGO RECIBIDO
+
+
+            Console.ReadKey();
+
+
+        }
+
+        private static void EjecucionDatosMaestros(Company company)
+        {
+            //CLIENTES (SOCIOS DE NEGOCIO)
+
+            BPManager bpManager = new BPManager(company);
+
+            //bpManager.Existe("PL20100686814");
+
+            //SAPbobsCOM.BusinessPartners bp = bpManager.Get("PL20100686814");
+            //Console.WriteLine($"Código: {bp.CardCode} - Rázón social: {bp.CardName} - RUC: {bp.FederalTaxID}");
+
+
+            //try
+            //{
+
+            //    Console.WriteLine("Iniciando consulta de socios filtrados por query");
+            //    List<BusinessPartner> listaFiltrada = bpManager.GetListaDesdeQuery("C"); //CLIENTES = C , PROVEEDORES = S
+
+            //    foreach (var socio in listaFiltrada)
+            //    {
+            //        Console.WriteLine($"Socio: {socio.CodigoSocio} - Razon Social: {socio.RazonSocial} - RUC: {socio.RUC}");
+            //    }
+            //}
+            //catch (Exception ex)
+            //{
+
+            //    Console.WriteLine(ex.Message);
+            //}
+
+
+            //BusinessPartner myBP = new BusinessPartner
+            //{
+            //    CodigoSocio = "CL10474049227",
+            //    RazonSocial = "MI RAZON SOCIAL SAC",
+            //    RUC = "10474049227"
+            //};
+
+            //try
+            //{
+            //    if (bpManager.Crear(myBP))
+            //        Console.WriteLine($"Cliente {myBP.CodigoSocio} creado correctamente");
+            //}
+            //catch (Exception ex)
+            //{
+            //    Console.WriteLine(ex.Message);
+            //}
+
+
+            //bpManager.Actualizar("CL10474049227");
+
+            try
+            {
+                bpManager.Eliminar("CL10474049227");
+                Console.WriteLine("El socio ha sido eliminado");
             }
             catch (Exception ex)
             {
 
                 Console.WriteLine(ex.Message);
             }
-
-
-
-            //ARTICULOS
-            //
-
-            Console.ReadKey();
-
-
         }
     }
 }
