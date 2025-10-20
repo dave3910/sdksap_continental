@@ -1,4 +1,5 @@
-﻿using DIAPI.Connection;
+﻿using DIAPI.BusinessPartners;
+using DIAPI.Connection;
 using SAPbobsCOM;
 using System;
 using System.Collections.Generic;
@@ -30,10 +31,12 @@ namespace DIAPI
             string usersap = "manager";
             string passsap = "sbosap";
 
+            Company company = null;
+
             try
             {
                 ConexionSAP con = new ConexionSAP(server, schema, userdb, passdb, usersap, passsap);
-                Company company = con.GetSAPConnection();
+                company = con.GetSAPConnection();
 
                 Console.WriteLine($"Conexión establecida correctamente con esquema {company.CompanyName}");
             }
@@ -41,6 +44,38 @@ namespace DIAPI
             {
                 Console.WriteLine(ex.Message);
             }
+
+            //DATOS MAESTROS
+            //CLIENTES (SOCIOS DE NEGOCIO)
+
+            BPManager bpManager = new BPManager(company);
+            bpManager.Existe("PL20100686814");
+
+            SAPbobsCOM.BusinessPartners bp = bpManager.Get("PL20100686814");
+            Console.WriteLine($"Código: {bp.CardCode} - Rázón social: {bp.CardName} - RUC: {bp.FederalTaxID}");
+
+
+            try
+            {
+
+                Console.WriteLine("Iniciando consulta de socios filtrados por query");
+                List<BusinessPartner> listaFiltrada = bpManager.GetListaDesdeQuery("C"); //CLIENTES = C , PROVEEDORES = S
+
+                foreach (var socio in listaFiltrada)
+                {
+                    Console.WriteLine($"Socio: {socio.CodigoSocio} - Razon Social: {socio.RazonSocial} - RUC: {socio.RUC}");
+                }
+            }
+            catch (Exception ex)
+            {
+
+                Console.WriteLine(ex.Message);
+            }
+
+
+
+            //ARTICULOS
+            //
 
             Console.ReadKey();
 
